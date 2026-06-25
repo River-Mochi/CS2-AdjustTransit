@@ -47,7 +47,7 @@ namespace AdjustTransit
             if (!s_BannerLogged)
             {
                 s_BannerLogged = true;
-                s_Log.Info($"{ModName} v{ModVersion} OnLoad");
+                s_Log.Info($"{ModName} v{ModVersion} Loaded.");
             }
 
             Setting setting = new(this);
@@ -70,8 +70,6 @@ namespace AdjustTransit
             setting.RegisterInOptionsUI();
 
             updateSystem.UpdateAfter<TransitSystem>(SystemUpdatePhase.PrefabUpdate);
-
-            s_Log.Info($"{ModId}.{nameof(OnLoad)} Completed.");
         }
 
         public void OnDispose()

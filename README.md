@@ -10,7 +10,7 @@ Adjust Transit Capacity lets you scale **public transit depot** and **passenger 
 
 ### About Tab
 - **Open log folder**
-- Optional **verbose logging** for troubleshooting
+
 
 ## Notes
 - Avoid using multiple mods that change the same depot, passenger, or transit-line policy values.
@@ -41,8 +41,6 @@ MIT
 
 ### Why one city shows “max 4–8 buses” on a route line and another shows “max 20–125 buses”
 
-In CS2, the transit line vehicle slider does **not** use a fixed maximum cap.
-
 The game estimates how many vehicles are needed to reach the tightest interval the policy allows, based on that line’s full round-trip cycle time.
 
 So if City A has:
@@ -59,11 +57,6 @@ If City B has:
 
 ...then the cycle time becomes much longer, so the same policy can justify 50–125 vehicles even on routes that look short.
 
-That is why the same ATC toggle can give different maximums across different saves: the underlying inputs are different.
-
-This mod does **not** use an invasive Harmony patch for transit line limits. It follows the game’s own vanilla route logic, but expands the usable slider range.
-
-That means route-line maximums stay **variable**, not fixed to one hard cap. Players still get the minimum **1 vehicle** option they want, and can often get much higher maximums than vanilla, but the exact number depends on the route.
 
 ### Takeaway
 
