@@ -11,12 +11,12 @@
 
 namespace AdjustTransit
 {
+    using System;                    // Exception
     using Colossal.IO.AssetDatabase; // FileLocation
     using Game;                      // IsGame
     using Game.Modding;              // IMod, ModSetting
     using Game.SceneFlow;            // GameManager
     using Game.Settings;             // Settings UI attributes
-    using System;                    // Exception
     using Unity.Entities;            // World
     using UnityEngine;               // Application.OpenURL
 
@@ -54,7 +54,7 @@ namespace AdjustTransit
             "https://mods.paradoxplaza.com/authors/River-mochi/cities_skylines_2?games=cities_skylines_2&orderBy=desc&sortBy=best&time=alltime";
 
         private const string UrlDiscord =
-            "https://discord.gg/HTav7ARPs2";
+            "https://discord.gg/gwXgvtyhjc";
 
         public Setting(IMod mod)
             : base(mod)
