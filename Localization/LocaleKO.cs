@@ -23,6 +23,15 @@ namespace AdjustTransit
             m_Setting = setting;
         }
 
+        private static string DebugGroupName()
+        {
+#if DEBUG
+            return "디버그 / 로그";
+#else
+            return "로그";
+#endif
+        }
+
         public IEnumerable<KeyValuePair<string, string>> ReadEntries(
             IList<IDictionaryEntryError> errors,
             Dictionary<string, int> indexCounts)
@@ -176,12 +185,7 @@ namespace AdjustTransit
 
                 { m_Setting.GetOptionGroupLocaleID(Setting.AboutInfoGroup), "정보" },
                 { m_Setting.GetOptionGroupLocaleID(Setting.AboutLinksGroup), "지원 링크" },
-
-#if DEBUG
-                { m_Setting.GetOptionGroupLocaleID(Setting.DebugGroup), "디버그 / 로그" },
-#else
-                { m_Setting.GetOptionGroupLocaleID(Setting.DebugGroup), "로그" },
-#endif
+                { m_Setting.GetOptionGroupLocaleID(Setting.DebugGroup), DebugGroupName() },
 
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.ModNameDisplay)), "모드" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.ModNameDisplay)), "이 모드의 표시 이름입니다." },

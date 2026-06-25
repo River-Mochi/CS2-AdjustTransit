@@ -23,6 +23,15 @@ namespace AdjustTransit
             m_Setting = setting;
         }
 
+        private static string DebugGroupName()
+        {
+#if DEBUG
+            return "调试 / 日志";
+#else
+            return "日志";
+#endif
+        }
+
         public IEnumerable<KeyValuePair<string, string>> ReadEntries(
             IList<IDictionaryEntryError> errors,
             Dictionary<string, int> indexCounts)
@@ -176,12 +185,7 @@ namespace AdjustTransit
 
                 { m_Setting.GetOptionGroupLocaleID(Setting.AboutInfoGroup), "信息" },
                 { m_Setting.GetOptionGroupLocaleID(Setting.AboutLinksGroup), "支持链接" },
-
-#if DEBUG
-                { m_Setting.GetOptionGroupLocaleID(Setting.DebugGroup), "调试 / 日志" },
-#else
-                { m_Setting.GetOptionGroupLocaleID(Setting.DebugGroup), "日志" },
-#endif
+                { m_Setting.GetOptionGroupLocaleID(Setting.DebugGroup), DebugGroupName() },
 
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.ModNameDisplay)), "模组" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.ModNameDisplay)), "此模组的显示名称。" },

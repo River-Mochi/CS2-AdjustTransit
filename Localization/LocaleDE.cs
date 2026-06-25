@@ -23,6 +23,15 @@ namespace AdjustTransit
             m_Setting = setting;
         }
 
+        private static string DebugGroupName()
+        {
+#if DEBUG
+            return "Debug / Logging";
+#else
+            return "Logs";
+#endif
+        }
+
         public IEnumerable<KeyValuePair<string, string>> ReadEntries(
             IList<IDictionaryEntryError> errors,
             Dictionary<string, int> indexCounts)
@@ -176,12 +185,7 @@ namespace AdjustTransit
 
                 { m_Setting.GetOptionGroupLocaleID(Setting.AboutInfoGroup), "Info" },
                 { m_Setting.GetOptionGroupLocaleID(Setting.AboutLinksGroup), "Support-Links" },
-
-#if DEBUG
-                { m_Setting.GetOptionGroupLocaleID(Setting.DebugGroup), "Debug / Logging" },
-#else
-                { m_Setting.GetOptionGroupLocaleID(Setting.DebugGroup), "Logs" },
-#endif
+                { m_Setting.GetOptionGroupLocaleID(Setting.DebugGroup), DebugGroupName() },
 
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.ModNameDisplay)), "Mod" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.ModNameDisplay)), "Anzeigename dieses Mods." },

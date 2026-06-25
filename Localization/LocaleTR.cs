@@ -23,6 +23,15 @@ namespace AdjustTransit
             m_Setting = setting;
         }
 
+        private static string DebugGroupName()
+        {
+#if DEBUG
+            return "Debug / Günlükleme";
+#else
+            return "Günlükler";
+#endif
+        }
+
         public IEnumerable<KeyValuePair<string, string>> ReadEntries(
             IList<IDictionaryEntryError> errors,
             Dictionary<string, int> indexCounts)
@@ -181,12 +190,7 @@ namespace AdjustTransit
 
                 { m_Setting.GetOptionGroupLocaleID(Setting.AboutInfoGroup), "Bilgi" },
                 { m_Setting.GetOptionGroupLocaleID(Setting.AboutLinksGroup), "Destek bağlantıları" },
-
-#if DEBUG
-                { m_Setting.GetOptionGroupLocaleID(Setting.DebugGroup), "Debug / Günlükleme" },
-#else
-                { m_Setting.GetOptionGroupLocaleID(Setting.DebugGroup), "Günlükler" },
-#endif
+                { m_Setting.GetOptionGroupLocaleID(Setting.DebugGroup), DebugGroupName() },
 
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.ModNameDisplay)), "Mod" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.ModNameDisplay)), "Bu modun görünen adı." },

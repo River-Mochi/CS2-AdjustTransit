@@ -23,6 +23,15 @@ namespace AdjustTransit
             m_Setting = setting;
         }
 
+        private static string DebugGroupName()
+        {
+#if DEBUG
+            return "Gỡ lỗi / Ghi log";
+#else
+            return "Logs";
+#endif
+        }
+
         public IEnumerable<KeyValuePair<string, string>> ReadEntries(
             IList<IDictionaryEntryError> errors,
             Dictionary<string, int> indexCounts)
@@ -181,12 +190,7 @@ namespace AdjustTransit
 
                 { m_Setting.GetOptionGroupLocaleID(Setting.AboutInfoGroup), "Thông tin" },
                 { m_Setting.GetOptionGroupLocaleID(Setting.AboutLinksGroup), "Liên kết hỗ trợ" },
-
-#if DEBUG
-                { m_Setting.GetOptionGroupLocaleID(Setting.DebugGroup), "Gỡ lỗi / Ghi log" },
-#else
-                { m_Setting.GetOptionGroupLocaleID(Setting.DebugGroup), "Logs" },
-#endif
+                { m_Setting.GetOptionGroupLocaleID(Setting.DebugGroup), DebugGroupName() },
 
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.ModNameDisplay)), "Mod" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.ModNameDisplay)), "Tên hiển thị của mod này." },

@@ -18,7 +18,7 @@
 - *Adjust Sliders* at any time, no restart needed; supports switching cities.
 - *Depot capacity* = maximum number of vehicles a single depot can maintain/spawn (extension building not scaled).
 - Avoid other depot/passenger capacity mods to avoid conflicts (they override each other).
-- No Harmony patch or Reflection used; less likely to break on patch days.
+- Does not use a harmony patch, less likely to break on patch days.
 - Safe to remove any time (use Reset buttons to return to vanilla game values).
 
 ### Important note
@@ -59,6 +59,7 @@ tags: city dispatch, control municipal, public transit system change size, incre
 	<!--Screenshot, can be set multiple times-->
 	<Screenshot Value="Properties/image10-Depots.jpg" />
 	<Screenshot Value="Properties/image20-Passengers.jpg" />
+    <Screenshot Value="Properties/image70-Languages.jpg" />
 	<!--Tag, can be set multiple times-->
 	<Tag Value="Code Mod" />
 	<!--Link to the forum post where the mod can be discussed-->
