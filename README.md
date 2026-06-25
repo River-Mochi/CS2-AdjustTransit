@@ -7,9 +7,6 @@ Adjust Transit Capacity lets you scale **public transit depot** and **passenger 
 ### Public Transit
 - **Depot capacity** (max vehicles per depot): Bus, **Ferry**, Taxi, Tram, Train, Subway
 - **Passenger capacity** (seats per vehicle): Bus, Tram, Train, Subway, Ship, Ferry, Airplane
-- Optional: **Extended Transit Lines** toggle  
-  Expands the in-game transit line slider range.  
-  It can allow down to **1 vehicle** on tested routes, and the upper limit can go much higher than vanilla.
 
 ### About Tab
 - **Open log folder**

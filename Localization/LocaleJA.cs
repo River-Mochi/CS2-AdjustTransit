@@ -11,8 +11,8 @@
 
 namespace AdjustTransit
 {
-    using Colossal;
     using System.Collections.Generic;
+    using Colossal;
 
     public sealed class LocaleJA : IDictionarySource
     {
@@ -49,18 +49,6 @@ namespace AdjustTransit
                 // --------------------
                 // Public Transit tab
                 // --------------------
-
-                { m_Setting.GetOptionGroupLocaleID(Setting.LineVehiclesGroup), "交通路線（ゲーム内スライダー範囲）" },
-
-                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.EnableLineVehicleCountTuner)), "路線スライダー拡張" },
-                { m_Setting.GetOptionDescLocaleID(nameof(Setting.EnableLineVehicleCountTuner)),
-                    "各路線ごとのゲーム内交通路線スライダーの**範囲**を拡張します。\n" +
-                    "テストしたすべての路線で**(1)** まで下げられます。\n" +
-                    "**最大値は可変**で、テストしたすべての路線で少なくともバニラの3×以上に達しました。\n" +
-                    "技術メモ：ゲームは路線時間（走行時間 + 停留所数）を使うため、最大値は固定ではなく可変です。\n" +
-                    "バス、フェリー、路面電車、列車、地下鉄、客船、飛行機に対応します。\n\n" +
-                    "<競合警告>：Public Works Plus または同じ交通路線ポリシーを変更する別のMODがある場合、この機能は1つのMODだけで有効にしてください。"
-                },
 
                 // Depot capacity sliders
                 { m_Setting.GetOptionGroupLocaleID(Setting.DepotGroup), "車庫容量（車庫ごとの最大車両数）" },

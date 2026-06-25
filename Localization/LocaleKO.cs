@@ -11,8 +11,8 @@
 
 namespace AdjustTransit
 {
-    using Colossal;
     using System.Collections.Generic;
+    using Colossal;
 
     public sealed class LocaleKO : IDictionarySource
     {
@@ -49,18 +49,6 @@ namespace AdjustTransit
                 // --------------------
                 // Public Transit tab
                 // --------------------
-
-                { m_Setting.GetOptionGroupLocaleID(Setting.LineVehiclesGroup), "교통 노선 (게임 내 슬라이더 범위)" },
-
-                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.EnableLineVehicleCountTuner)), "확장 교통 노선" },
-                { m_Setting.GetOptionDescLocaleID(nameof(Setting.EnableLineVehicleCountTuner)),
-                    "각 노선별 게임 내 교통 노선 슬라이더의 **범위**를 확장합니다.\n" +
-                    "테스트한 모든 노선에서 **(1)** 까지 낮출 수 있습니다.\n" +
-                    "**최대 한도는 가변적**이며, 테스트한 모든 노선에서 바닐라보다 최소 3배 이상 높아졌습니다.\n" +
-                    "기술 메모: 게임은 노선 시간(주행 시간 + 정류장 수)을 사용하므로 최대값은 고정이 아니라 가변입니다.\n" +
-                    "버스, 페리, 트램, 열차, 지하철, 여객선, 비행기에 적용됩니다.\n\n" +
-                    "<충돌 경고>: Public Works Plus 또는 같은 교통 노선 정책을 수정하는 다른 모드가 있다면, 이 기능은 한 모드에서만 켜 두세요."
-                },
 
                 // Depot capacity sliders
                 { m_Setting.GetOptionGroupLocaleID(Setting.DepotGroup), "차고 용량 (차고당 최대 차량 수)" },

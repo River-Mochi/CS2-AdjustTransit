@@ -11,15 +11,16 @@
 
 namespace AdjustTransit
 {
+    using System;                    // Exception
+    using System.Reflection;         // Assembly
     using Colossal;                  // IDictionarySource
     using Colossal.IO.AssetDatabase; // AssetDatabase.LoadSettings
     using Colossal.Localization;     // LocalizationManager
     using Colossal.Logging;          // ILog
+    using CS2Shared.RiverMochi;      // LogUtils, ShellOpen
     using Game;                      // UpdateSystem, GameManager, SystemUpdatePhase
     using Game.Modding;              // IMod
     using Game.SceneFlow;            // GameManager
-    using System;                    // Exception
-    using System.Reflection;         // Assembly
 
     /// <summary>Mod entry point: registers settings, locales, and ECS systems.</summary>
     public sealed class Mod : IMod
@@ -41,6 +42,8 @@ namespace AdjustTransit
 
         public void OnLoad(UpdateSystem updateSystem)
         {
+            ShellOpen.Configure(s_Log, ModId, ModTag);
+
             if (!s_BannerLogged)
             {
                 s_BannerLogged = true;
@@ -67,7 +70,6 @@ namespace AdjustTransit
             setting.RegisterInOptionsUI();
 
             updateSystem.UpdateAfter<TransitSystem>(SystemUpdatePhase.PrefabUpdate);
-            updateSystem.UpdateAfter<VehicleCountPolicyTunerSystem>(SystemUpdatePhase.PrefabUpdate);
 
             s_Log.Info($"{ModId}.{nameof(OnLoad)} Completed.");
         }

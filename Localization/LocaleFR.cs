@@ -11,8 +11,8 @@
 
 namespace AdjustTransit
 {
-    using Colossal;
     using System.Collections.Generic;
+    using Colossal;
 
     public sealed class LocaleFR : IDictionarySource
     {
@@ -49,18 +49,6 @@ namespace AdjustTransit
                 // --------------------
                 // Public Transit tab
                 // --------------------
-
-                { m_Setting.GetOptionGroupLocaleID(Setting.LineVehiclesGroup), "Lignes de transport (plage du curseur en jeu)" },
-
-                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.EnableLineVehicleCountTuner)), "Lignes de transport étendues" },
-                { m_Setting.GetOptionDescLocaleID(nameof(Setting.EnableLineVehicleCountTuner)),
-                    "Étend la **plage** du curseur des lignes de transport en jeu pour chaque itinéraire.\n" +
-                    "**Jusqu’à (1)** sur tous les itinéraires testés.\n" +
-                    "La **limite maximale varie** ; tous les itinéraires testés ont atteint au moins 3× plus que le vanilla.\n" +
-                    "Note technique : le jeu utilise le temps d’itinéraire (temps de conduite + nombre d’arrêts), donc le maximum est variable et non statique.\n" +
-                    "Fonctionne pour bus, ferry, tram, train, métro, navire et avion.\n\n" +
-                    "<Avertissement de conflit> : si Public Works Plus ou un autre mod modifie la même politique des lignes de transport, laisser cette fonction activée dans un seul mod."
-                },
 
                 // Depot capacity sliders
                 { m_Setting.GetOptionGroupLocaleID(Setting.DepotGroup), "Capacité des dépôts (véhicules max par dépôt)" },

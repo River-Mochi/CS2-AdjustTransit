@@ -15,7 +15,6 @@ Everything is OPTIONAL!
 #### Features
 - **Transit depots:** change max vehicles per depot (Bus, Ferry, Subway, Taxi, Tram, Train)
 - **Passengers:** change maximum seats (Bus, Tram, Train, Subway, Ship, Ferry, Airplane)
-- **Extend Transit Lines:** optional toggle to expand the in-game slider ( if you want just 1 bus on a line or more buses, etc.)
 
 ### Notes 🚍🚋🚆✈️🚢
 - *Adjust Sliders* at any time, no restart needed; supports switching cities.
@@ -23,19 +22,13 @@ Everything is OPTIONAL!
 - Avoid other depot/passenger capacity mods to avoid conflicts (they override each other).
 - No Harmony patch or Reflection used; less likely to break on patch days.
 - Safe to remove any time (use Reset buttons to return to vanilla game values).
-- The transit line feature follows the game’s own route logic, so the maximum is variable rather than a fixed static cap.
-- On tested routes this can go as low as **1** vehicle and much higher than vanilla on the upper end.
-
 
 ### Important note
-- ATC still works fine for players who only want Transit features.
+- ATC is a good fit for players who only want Transit features.
 - New mod Public Works Plus includes all ATC plus 5 new major features combined.
 - If installing PwP, then remove ATC (since ATC is included in PwP).
-- ATC will get minor updates, but major new features will be in PwP.
-
-#### Settings file
-- **new settings file**: `ModsSettings/AdjustTransit`
-- Older saved settings from earlier ATC do **not** carry over, just set the sliders again and you are good to go.
+- ATC will get minor updates, but major new features will be in a larger PwP mod.
+- If you want an option to reduce bus lines to 1 bus, get Public Works mod (All Vehicle Capacity).
 
 ### Support and feedback
 - If the mod helps you, give it a Like, it's free + easy :)
@@ -44,7 +37,7 @@ Everything is OPTIONAL!
 ### Credits
 - River-Mochi: author
 - yenyang: code review and testing.
-- The transit section is inspired by Wayz's original Depot Capacity Changer.
+- transit part is inspired by Wayz's original Depot Capacity Changer.
 - Necko1996: testing
 - BugsyG: testing
 
@@ -60,8 +53,7 @@ This is designed to *not* run in the city per-frame. Player makes changes in Opt
 If you want to increase transit route slider a little more, add some stops to the route.
 Game auto-increases the max based on different factors, adding stops is just the easiest to nudge it.
 
-
-tags: city dispatch, transit line increase, control municipal, public transit system, change size, increase people passengers, depot size demand, decrease passengers
+tags: city dispatch, control municipal, public transit system change size, increase people, depot size demand, decrease passengers
 
 </LongDescription>
 	<!--Thumbnail-->
@@ -82,7 +74,7 @@ tags: city dispatch, transit line increase, control municipal, public transit sy
 	<!-- Change log for new version. Single line or multi line. Supports minimal markdown subset -->
 <ChangeLog>
 - Update for game patch 1.6
-- remove Options menu Transit Line policy checkbox
+- remove Options menu Transit Line policy checkbox, Public Works mod has it.
 </ChangeLog>
 	<!--External link. supported types are discord, github, youtube, twitch, x, paypal, patreon-->
     <ExternalLink Type="github" Url="https://github.com/River-Mochi/CS2-AdjustTransit" />

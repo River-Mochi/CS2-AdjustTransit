@@ -11,8 +11,8 @@
 
 namespace AdjustTransit
 {
-    using Colossal;
     using System.Collections.Generic;
+    using Colossal;
 
     public sealed class LocaleDE : IDictionarySource
     {
@@ -48,19 +48,7 @@ namespace AdjustTransit
 
                 // --------------------
                 // Public Transit tab
-                // --------------------
-
-                { m_Setting.GetOptionGroupLocaleID(Setting.LineVehiclesGroup), "Transitlinien (Schiebereglerbereich im Spiel)" },
-
-                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.EnableLineVehicleCountTuner)), "Erweiterte Transitlinien" },
-                { m_Setting.GetOptionDescLocaleID(nameof(Setting.EnableLineVehicleCountTuner)),
-                    "Erweitert den **Bereich** des Transitlinien-Schiebereglers im Spiel pro Route.\n" +
-                    "**Bis auf (1)** bei allen getesteten Routen.\n" +
-                    "Das **Maximallimit variiert**; alle getesteten Routen erreichten mindestens 3× mehr als Vanilla.\n" +
-                    "Technischer Hinweis: Das Spiel verwendet die Routenzeit (Fahrzeit + Anzahl der Haltestellen), daher ist das Maximum variabel und nicht statisch.\n" +
-                    "Funktioniert für Bus, Fähre, Straßenbahn, Zug, U-Bahn, Schiff und Flugzeug.\n\n" +
-                    "<Konfliktwarnung>: Wenn Public Works Plus oder ein anderer Mod dieselbe Transitlinien-Richtlinie bearbeitet, diese Funktion nur in einem Mod aktiv lassen."
-                },
+                // --------------------      
 
                 // Depot capacity sliders
                 { m_Setting.GetOptionGroupLocaleID(Setting.DepotGroup), "Depotkapazität (max. Fahrzeuge pro Depot)" },

@@ -7,41 +7,15 @@
 // ================= </copyright> ======================
 
 // File: Settings/Setting.Transit.cs
-// Purpose: Public Transit settings (depots, passengers, line vehicle policy toggle).
+// Purpose: Public Transit settings (depots and passengers).
 
 namespace AdjustTransit
 {
-    using Game;           // IsGame
-    using Game.SceneFlow; // GameManager
     using Game.Settings;  // Settings UI attributes
     using Game.UI;        // Unit
 
     public sealed partial class Setting
     {
-        private bool m_EnableLineVehicleCountTuner;
-
-        // Toggle extended transit line slider range.
-        [SettingsUISection(PublicTransitTab, LineVehiclesGroup)]
-        public bool EnableLineVehicleCountTuner
-        {
-            get => m_EnableLineVehicleCountTuner;
-            set
-            {
-                if (m_EnableLineVehicleCountTuner == value)
-                {
-                    return;
-                }
-
-                m_EnableLineVehicleCountTuner = value;
-
-                // Apply immediately when a city is loaded.
-                GameManager? gm = GameManager.instance;
-                if (gm != null && gm.gameMode.IsGame())
-                {
-                    Apply();
-                }
-            }
-        }
 
         // ------------------------
         // DEPOT buildings (percent)
@@ -184,8 +158,6 @@ namespace AdjustTransit
 
         partial void SetDefaults_Transit()
         {
-            m_EnableLineVehicleCountTuner = true;
-
             ResetDepotToVanilla();
             ResetPassengerToVanilla();
         }

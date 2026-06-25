@@ -13,6 +13,7 @@ namespace AdjustTransit
 {
     using System;                    // Exception
     using Colossal.IO.AssetDatabase; // FileLocation
+    using CS2Shared.RiverMochi;      // LogUtils, ShellOpen
     using Game;                      // IsGame
     using Game.Modding;              // IMod, ModSetting
     using Game.SceneFlow;            // GameManager
@@ -23,10 +24,10 @@ namespace AdjustTransit
     [FileLocation("ModsSettings/AdjustTransit/AdjustTransit")]
     [SettingsUITabOrder(PublicTransitTab, AboutTab)]
     [SettingsUIGroupOrder(
-        LineVehiclesGroup, DepotGroup, PassengerGroup,
+        DepotGroup, PassengerGroup,
         AboutInfoGroup, AboutLinksGroup, DebugGroup)]
     [SettingsUIShowGroupName(
-        LineVehiclesGroup, DepotGroup, PassengerGroup,
+        DepotGroup, PassengerGroup,
         AboutLinksGroup, DebugGroup)]
     public sealed partial class Setting : ModSetting
     {
@@ -35,7 +36,6 @@ namespace AdjustTransit
         public const string AboutTab = "About";
 
         // Group ids (must match Locale ids).
-        public const string LineVehiclesGroup = "LineVehicles";
         public const string DepotGroup = "DepotCapacity";
         public const string PassengerGroup = "PassengerCapacity";
         public const string AboutInfoGroup = "AboutInfo";
@@ -96,7 +96,6 @@ namespace AdjustTransit
             }
 
             TryEnableOnce<TransitSystem>(world, "TransitSystem");
-            TryEnableOnce<VehicleCountPolicyTunerSystem>(world, "VehicleCountPolicyTunerSystem");
         }
 
         private static void TryEnableOnce<T>(World world, string label) where T : GameSystemBase
@@ -181,9 +180,16 @@ namespace AdjustTransit
         [SettingsUIButtonGroup(DebugGroup)]
         [SettingsUIButton]
         [SettingsUISection(AboutTab, DebugGroup)]
+
         public bool OpenLogButton
         {
-            set => ShellOpen.OpenFolderSafe(ShellOpen.GetLogsFolder(), "OpenLog");
+            set
+            {
+                if (value)
+                {
+                    ShellOpen.OpenModLogOrLogsFolder();
+                }
+            }
         }
 
         // ------------------------

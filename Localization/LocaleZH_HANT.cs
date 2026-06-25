@@ -11,8 +11,8 @@
 
 namespace AdjustTransit
 {
-    using Colossal;
     using System.Collections.Generic;
+    using Colossal;
 
     public sealed class LocaleZH_HANT : IDictionarySource
     {
@@ -49,18 +49,6 @@ namespace AdjustTransit
                 // --------------------
                 // Public Transit tab
                 // --------------------
-
-                { m_Setting.GetOptionGroupLocaleID(Setting.LineVehiclesGroup), "交通路線（遊戲內滑桿範圍）" },
-
-                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.EnableLineVehicleCountTuner)), "擴展交通路線" },
-                { m_Setting.GetOptionDescLocaleID(nameof(Setting.EnableLineVehicleCountTuner)),
-                    "擴展每條路線在遊戲內交通路線滑桿的**範圍**。\n" +
-                    "在所有已測試路線上，最低可到 **(1)**。\n" +
-                    "**最大上限會變動**；所有已測試路線都至少達到原版的 3× 以上。\n" +
-                    "技術說明：遊戲使用路線時間（行駛時間 + 站點數量），因此最大值是可變的，而不是固定的。\n" +
-                    "適用於公車、渡輪、電車、火車、地鐵、客船與飛機。\n\n" +
-                    "<衝突警告>：如果 Public Works Plus 或其他模組修改相同的交通路線策略，請只在一個模組中啟用此功能。"
-                },
 
                 // Depot capacity sliders
                 { m_Setting.GetOptionGroupLocaleID(Setting.DepotGroup), "車庫容量（每個車庫最大車輛數）" },

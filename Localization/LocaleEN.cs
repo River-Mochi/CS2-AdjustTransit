@@ -11,8 +11,8 @@
 
 namespace AdjustTransit
 {
-    using Colossal;
     using System.Collections.Generic;
+    using Colossal;
 
     public sealed class LocaleEN : IDictionarySource
     {
@@ -49,17 +49,6 @@ namespace AdjustTransit
                 // --------------------
                 // Public Transit tab
                 // --------------------
-
-                { m_Setting.GetOptionGroupLocaleID(Setting.LineVehiclesGroup), "Transit lines (in-game slider range)" },
-
-                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.EnableLineVehicleCountTuner)), "Extended transit lines" },
-                { m_Setting.GetOptionDescLocaleID(nameof(Setting.EnableLineVehicleCountTuner)),
-                    "Expands the **range** of the in-game Transit Line Slider per route.\n" +
-                    "**As low as (1)** bus or other type on routes.\n" +
-                    "**Maximum limit varies**; all tested routes reached ~3× or higher than vanilla.\n" +
-                    "Tech note: game uses route time (driving time + stop count), so the maximum is variable rather than static.\n" +
-                    "<Conflict warning>: if Public Works Plus or another mod edits the same Transit Line policy, disable the other mod or this checkbox [ ]"
-                },
 
                 // Depot capacity sliders
                 { m_Setting.GetOptionGroupLocaleID(Setting.DepotGroup), "Depot capacity (max vehicles per depot)" },
