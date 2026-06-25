@@ -10,8 +10,6 @@
 	<LongDescription>
 ### Adjust Transit Capacity (ATC)
 
-Everything is OPTIONAL!
-
 #### Features
 - **Transit depots:** change max vehicles per depot (Bus, Ferry, Subway, Taxi, Tram, Train)
 - **Passengers:** change maximum seats (Bus, Tram, Train, Subway, Ship, Ferry, Airplane)
@@ -25,9 +23,9 @@ Everything is OPTIONAL!
 
 ### Important note
 - ATC is a good fit for players who only want Transit features.
-- New mod Public Works Plus includes all ATC plus 5 new major features combined.
+- The newer mod Public Works Plus (PwP) includes all of ATC plus 5 other sections combined (e.g. Industry Trucks + Deliveries).
 - If installing PwP, then remove ATC (since ATC is included in PwP).
-- ATC will get minor updates, but major new features will be in a larger PwP mod.
+- ATC will get minor updates, but major new features will be in the PwP mod link. 
 - If you want an option to reduce bus lines to 1 bus, get Public Works mod (All Vehicle Capacity).
 
 ### Support and feedback
@@ -44,10 +42,10 @@ Everything is OPTIONAL!
 ### Performance
 This is designed to *not* run in the city per-frame. Player makes changes in Options Menu > then mod goes idle.
 
-### 11 Languages
+### 11+ Languages
 
 - English, Français, Deutsch, Español, Italiano, Polski Polish, Português Brazilian
-- 한국어, 日本語, 简体中文 (Simplified Chinese), 繁體中文 Traditional Chinese
+- 한국어, 日本語, 简体中文 (Simplified Chinese), 繁體中文 Traditional Chinese, Turkish, Vietnamese
 
 ### Tip:
 If you want to increase transit route slider a little more, add some stops to the route.
@@ -59,7 +57,7 @@ tags: city dispatch, control municipal, public transit system change size, incre
 	<!--Thumbnail-->
 	<Thumbnail Value="Properties/Thumbnail-ATC.jpg" />
 	<!--Screenshot, can be set multiple times-->
-	<Screenshot Value="Properties/image10-TransitOnly.jpg" />
+	<Screenshot Value="Properties/image10-Depots.jpg" />
 	<Screenshot Value="Properties/image20-Passengers.jpg" />
 	<!--Tag, can be set multiple times-->
 	<Tag Value="Code Mod" />
@@ -73,8 +71,9 @@ tags: city dispatch, control municipal, public transit system change size, incre
 	<Dependency Id="" />
 	<!-- Change log for new version. Single line or multi line. Supports minimal markdown subset -->
 <ChangeLog>
-- Update for game patch 1.6
-- remove Options menu Transit Line policy checkbox, Public Works mod has it.
+- Updated for game patch 1.6
+- Added Turkish and Vietnamese translations.
+- removed Options menu Transit Line policy checkbox, Public Works mod has it.
 - verbose log option now only in Debug build.
 </ChangeLog>
 	<!--External link. supported types are discord, github, youtube, twitch, x, paypal, patreon-->

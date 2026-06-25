@@ -64,6 +64,9 @@ namespace AdjustTransit
             AddLocaleSource("pt-BR", new LocalePT_BR(setting));
             AddLocaleSource("zh-HANS", new LocaleZH_CN(setting));
             AddLocaleSource("zh-HANT", new LocaleZH_HANT(setting));
+            AddLocaleSource("tr-TR", new LocaleTR(setting));
+            AddLocaleSource("vi-VN", new LocaleVI(setting));
+
 
             AssetDatabase.global.LoadSettings(ModId, setting, new Setting(this));
             setting.SanitizeAfterLoad();
