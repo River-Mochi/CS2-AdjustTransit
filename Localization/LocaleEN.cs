@@ -181,7 +181,12 @@ namespace AdjustTransit
 
                 { m_Setting.GetOptionGroupLocaleID(Setting.AboutInfoGroup), "Info" },
                 { m_Setting.GetOptionGroupLocaleID(Setting.AboutLinksGroup), "Support links" },
+
+#if DEBUG
                 { m_Setting.GetOptionGroupLocaleID(Setting.DebugGroup), "Debug / Logging" },
+#else
+                { m_Setting.GetOptionGroupLocaleID(Setting.DebugGroup), "Logs" },
+#endif
 
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.ModNameDisplay)), "Mod" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.ModNameDisplay)), "Display name of this mod." },
@@ -195,16 +200,18 @@ namespace AdjustTransit
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.OpenDiscord)), "Discord" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.OpenDiscord)), "Open the community Discord in a browser." },
 
+#if DEBUG
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.EnableDebugLogging)), "Verbose debug logs" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.EnableDebugLogging)),
                     "Sends extra details to this mod's log file for debugging.\n" +
                     "**Disable** for normal gameplay, as excessive logs can reduce performance.\n" +
                     "<This only increases logging and does not change gameplay values.>"
                 },
+#endif
 
-                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.OpenLogButton)), "Open log folder" },
+                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.OpenLogButton)), "Open log" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.OpenLogButton)),
-                    "Open the logs folder for this mod."
+                    "Open this mod's log file if it exists. If not, open the game Logs folder."
                 },
             };
         }

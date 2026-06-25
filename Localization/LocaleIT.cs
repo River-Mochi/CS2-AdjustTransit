@@ -55,124 +55,120 @@ namespace AdjustTransit
 
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.BusDepotScalar)), "Deposito autobus" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.BusDepotScalar)),
-                    "Cambia quanti autobus ogni **deposito autobus** può mantenere o generare.\n" +
-                    "**100%** = vanilla (valore predefinito del gioco).\n" +
-                    "**1000%** = 10× in più.\n" +
-                    "Si applica all’edificio base."
+                                    "Modifica quanti autobus ogni **deposito autobus** può mantenere o generare.\n" +
+                                    "**100%** = vanilla (predefinito del gioco).\n" +
+                                    "**1000%** = 10× in più.\n" +
+                                    "Si applica all’edificio base."
                 },
 
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.FerryDepotScalar)), "Deposito traghetti" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.FerryDepotScalar)),
-                    "Cambia quanti traghetti ogni **deposito traghetti** può mantenere o generare.\n" +
-                    "**100%** = vanilla (valore predefinito del gioco).\n" +
-                    "**1000%** = 10× in più.\n" +
-                    "Si applica all’edificio base."
+                                    "Modifica quanti traghetti ogni **deposito traghetti** può mantenere o generare.\n" +
+                                    "**100%** = vanilla (predefinito del gioco).\n" +
+                                    "**1000%** = 10× in più.\n" +
+                                    "Si applica all’edificio base."
                 },
 
-                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.SubwayDepotScalar)), "Deposito metropolitana" },
+                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.SubwayDepotScalar)), "Deposito metro" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.SubwayDepotScalar)),
-                    "Cambia quanti veicoli della metropolitana ogni **deposito metropolitana** può mantenere.\n" +
-                    "**100%** = vanilla (valore predefinito del gioco).\n" +
-                    "**1000%** = 10× in più.\n" +
-                    "Si applica all’edificio base."
+                                    "Modifica quanti veicoli della metro ogni **deposito metro** può mantenere.\n" +
+                                    "**100%** = vanilla (predefinito del gioco).\n" +
+                                    "**1000%** = 10× in più.\n" +
+                                    "Si applica all’edificio base."
                 },
 
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.TaxiDepotScalar)), "Deposito taxi" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.TaxiDepotScalar)),
-                    "Cambia quanti taxi ogni **deposito taxi** può mantenere.\n" +
-                    "**100%** = vanilla (valore predefinito del gioco).\n" +
-                    "**1000%** = 10× in più.\n" +
-                    "Valori alti possono creare traffico taxi eccessivo."
+                                    "Modifica quanti taxi ogni **deposito taxi** può mantenere.\n" +
+                                    "**100%** = vanilla (predefinito del gioco).\n" +
+                                    "**1000%** = 10× in più.\n" +
+                                    "Valori alti possono creare traffico taxi eccessivo."
                 },
 
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.TramDepotScalar)), "Deposito tram" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.TramDepotScalar)),
-                    "Cambia quanti tram ogni **deposito tram** può mantenere.\n" +
-                    "**100%** = vanilla (valore predefinito del gioco).\n" +
-                    "**1000%** = 10× in più.\n" +
-                    "Si applica all’edificio base."
+                                    "Modifica quanti tram ogni **deposito tram** può mantenere.\n" +
+                                    "**100%** = vanilla (predefinito del gioco).\n" +
+                                    "**1000%** = 10× in più.\n" +
+                                    "Si applica all’edificio base."
                 },
 
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.TrainDepotScalar)), "Deposito treni" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.TrainDepotScalar)),
-                    "Cambia quanti treni ogni **deposito treni** può mantenere.\n" +
-                    "**100%** = vanilla (valore predefinito del gioco).\n" +
-                    "**1000%** = 10× in più.\n" +
-                    "Si applica all’edificio base."
+                                    "Modifica quanti treni ogni **deposito treni** può mantenere.\n" +
+                                    "**100%** = vanilla (predefinito del gioco).\n" +
+                                    "**1000%** = 10× in più.\n" +
+                                    "Si applica all’edificio base."
                 },
 
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.ResetDepotToVanillaButton)), "Ripristina depositi" },
-                { m_Setting.GetOptionDescLocaleID(nameof(Setting.ResetDepotToVanillaButton)),
-                    "Riporta tutti i cursori dei depositi a **100%** (predefinito del gioco / vanilla)." },
+                { m_Setting.GetOptionDescLocaleID(nameof(Setting.ResetDepotToVanillaButton)), "Riporta tutti gli slider dei depositi a **100%** (predefinito / vanilla)." },
 
                 // Passenger capacity sliders
-                { m_Setting.GetOptionGroupLocaleID(Setting.PassengerGroup), "Capacità passeggeri (max persone per veicolo)" },
+                { m_Setting.GetOptionGroupLocaleID(Setting.PassengerGroup), "Capacità passeggeri (persone max per veicolo)" },
 
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.BusPassengerScalar)), "Autobus" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.BusPassengerScalar)),
-                    "Cambia la capacità **passeggeri autobus**.\n" +
-                    "**10%** = 10% dei posti vanilla.\n" +
-                    "**100%** = posti vanilla (valore predefinito del gioco).\n" +
-                    "**1000%** = 10× più posti."
+                                    "Modifica la capacità **passeggeri degli autobus**.\n" +
+                                    "**10%** = 10% dei posti vanilla.\n" +
+                                    "**100%** = posti vanilla (predefinito del gioco).\n" +
+                                    "**1000%** = 10× posti in più."
                 },
 
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.TramPassengerScalar)), "Tram" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.TramPassengerScalar)),
-                    "Cambia la capacità **passeggeri tram**.\n" +
-                    "**10%** = 10% dei posti vanilla.\n" +
-                    "**100%** = posti vanilla (valore predefinito del gioco).\n" +
-                    "**1000%** = 10× più posti."
+                                    "Modifica la capacità **passeggeri dei tram**.\n" +
+                                    "**10%** = 10% dei posti vanilla.\n" +
+                                    "**100%** = posti vanilla (predefinito del gioco).\n" +
+                                    "**1000%** = 10× posti in più."
                 },
 
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.TrainPassengerScalar)), "Treno" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.TrainPassengerScalar)),
-                    "Cambia la capacità **passeggeri treno**.\n" +
-                    "Si applica a locomotive e sezioni.\n" +
-                    "**10%** = 10% dei posti vanilla.\n" +
-                    "**100%** = posti vanilla (valore predefinito del gioco).\n" +
-                    "**1000%** = 10× più posti."
+                                    "Modifica la capacità **passeggeri dei treni**.\n" +
+                                    "Si applica a motrici e sezioni.\n" +
+                                    "**10%** = 10% dei posti vanilla.\n" +
+                                    "**100%** = posti vanilla (predefinito del gioco).\n" +
+                                    "**1000%** = 10× posti in più."
                 },
 
-                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.SubwayPassengerScalar)), "Metropolitana" },
+                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.SubwayPassengerScalar)), "Metro" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.SubwayPassengerScalar)),
-                    "Cambia la capacità **passeggeri metropolitana**.\n" +
-                    "**10%** = 10% dei posti vanilla.\n" +
-                    "**100%** = posti vanilla (valore predefinito del gioco).\n" +
-                    "**1000%** = 10× più posti."
+                                    "Modifica la capacità **passeggeri della metro**.\n" +
+                                    "**10%** = 10% dei posti vanilla.\n" +
+                                    "**100%** = posti vanilla (predefinito del gioco).\n" +
+                                    "**1000%** = 10× posti in più."
                 },
 
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.ShipPassengerScalar)), "Nave" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.ShipPassengerScalar)),
-                    "Cambia la capacità delle **navi passeggeri** (non navi cargo).\n" +
-                    "**10%** = 10% dei posti vanilla.\n" +
-                    "**100%** = posti vanilla (valore predefinito del gioco).\n" +
-                    "**1000%** = 10× più posti."
+                                    "Modifica la capacità delle **navi passeggeri** (non cargo).\n" +
+                                    "**10%** = 10% dei posti vanilla.\n" +
+                                    "**100%** = posti vanilla (predefinito del gioco).\n" +
+                                    "**1000%** = 10× posti in più."
                 },
 
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.FerryPassengerScalar)), "Traghetto" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.FerryPassengerScalar)),
-                    "Cambia la capacità **passeggeri traghetto**.\n" +
-                    "**10%** = 10% dei posti vanilla.\n" +
-                    "**100%** = posti vanilla (valore predefinito del gioco).\n" +
-                    "**1000%** = 10× più posti."
+                                    "Modifica la capacità **passeggeri dei traghetti**.\n" +
+                                    "**10%** = 10% dei posti vanilla.\n" +
+                                    "**100%** = posti vanilla (predefinito del gioco).\n" +
+                                    "**1000%** = 10× posti in più."
                 },
 
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.AirplanePassengerScalar)), "Aereo" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.AirplanePassengerScalar)),
-                    "Cambia la capacità **passeggeri aereo**.\n" +
-                    "**10%** = 10% dei posti vanilla.\n" +
-                    "**100%** = posti vanilla (valore predefinito del gioco).\n" +
-                    "**1000%** = 10× più posti."
+                                    "Modifica la capacità **passeggeri degli aerei**.\n" +
+                                    "**10%** = 10% dei posti vanilla.\n" +
+                                    "**100%** = posti vanilla (predefinito del gioco).\n" +
+                                    "**1000%** = 10× posti in più."
                 },
 
-                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.DoublePassengersButton)), "Raddoppia tutto" },
-                { m_Setting.GetOptionDescLocaleID(nameof(Setting.DoublePassengersButton)),
-                    "Imposta ogni cursore passeggeri a **200%**."
-                },
+                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.DoublePassengersButton)), "Raddoppia tutti i passeggeri" },
+                { m_Setting.GetOptionDescLocaleID(nameof(Setting.DoublePassengersButton)), "Imposta ogni slider passeggeri a **200%**." },
 
-                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.ResetPassengerToVanillaButton)), "Ripristina tutti i passeggeri" },
-                { m_Setting.GetOptionDescLocaleID(nameof(Setting.ResetPassengerToVanillaButton)),
-                    "Riporta tutti i cursori passeggeri a **100%** (predefinito del gioco / vanilla)." },
+                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.ResetPassengerToVanillaButton)), "Ripristina passeggeri" },
+                { m_Setting.GetOptionDescLocaleID(nameof(Setting.ResetPassengerToVanillaButton)), "Riporta tutti gli slider passeggeri a **100%** (predefinito / vanilla)." },
 
                 // -------------------
                 // About tab
@@ -180,7 +176,12 @@ namespace AdjustTransit
 
                 { m_Setting.GetOptionGroupLocaleID(Setting.AboutInfoGroup), "Info" },
                 { m_Setting.GetOptionGroupLocaleID(Setting.AboutLinksGroup), "Link di supporto" },
-                { m_Setting.GetOptionGroupLocaleID(Setting.DebugGroup), "Debug / Log" },
+
+#if DEBUG
+                { m_Setting.GetOptionGroupLocaleID(Setting.DebugGroup), "Debug / log" },
+#else
+                { m_Setting.GetOptionGroupLocaleID(Setting.DebugGroup), "Log" },
+#endif
 
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.ModNameDisplay)), "Mod" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.ModNameDisplay)), "Nome visualizzato di questo mod." },
@@ -194,17 +195,17 @@ namespace AdjustTransit
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.OpenDiscord)), "Discord" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.OpenDiscord)), "Apre il Discord della community nel browser." },
 
-                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.EnableDebugLogging)), "Log debug dettagliati" },
+#if DEBUG
+                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.EnableDebugLogging)), "Log di debug dettagliati" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.EnableDebugLogging)),
-                    "Invia dettagli aggiuntivi al file di log di questo mod per la risoluzione dei problemi.\n" +
-                    "**Disattivare** per il gioco normale.\n" +
-                    "<Questo aumenta solo il logging e non cambia i valori di gioco.>"
+                                    "Invia dettagli aggiuntivi al file log di questo mod per il debug.\n" +
+                                    "**Disattiva** durante il gioco normale, perché troppi log possono ridurre le prestazioni.\n" +
+                                    "<Aumenta solo la registrazione dei log e non cambia valori di gameplay.>"
                 },
+#endif
 
-                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.OpenLogButton)), "Apri cartella log" },
-                { m_Setting.GetOptionDescLocaleID(nameof(Setting.OpenLogButton)),
-                    "Apre la cartella dei log di questo mod."
-                },
+                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.OpenLogButton)), "Apri log" },
+                { m_Setting.GetOptionDescLocaleID(nameof(Setting.OpenLogButton)), "Apre il file log di questo mod se esiste. Altrimenti apre la cartella Logs del gioco." },
             };
         }
 

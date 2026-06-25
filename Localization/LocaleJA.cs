@@ -55,124 +55,120 @@ namespace AdjustTransit
 
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.BusDepotScalar)), "バス車庫" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.BusDepotScalar)),
-                    "各**バス車庫**が維持または出庫できるバスの数を変更します。\n" +
-                    "**100%** = バニラ（ゲーム既定値）。\n" +
-                    "**1000%** = 10倍。\n" +
-                    "基本建物に適用されます。"
+                                    "各**バス車庫**が維持または出庫できるバス数を変更します。\n" +
+                                    "**100%** = バニラ（ゲーム既定値）。\n" +
+                                    "**1000%** = 10倍。\n" +
+                                    "基本建物に適用されます。"
                 },
 
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.FerryDepotScalar)), "フェリー車庫" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.FerryDepotScalar)),
-                    "各**フェリー車庫**が維持または出庫できるフェリーの数を変更します。\n" +
-                    "**100%** = バニラ（ゲーム既定値）。\n" +
-                    "**1000%** = 10倍。\n" +
-                    "基本建物に適用されます。"
+                                    "各**フェリー車庫**が維持または出庫できるフェリー数を変更します。\n" +
+                                    "**100%** = バニラ（ゲーム既定値）。\n" +
+                                    "**1000%** = 10倍。\n" +
+                                    "基本建物に適用されます。"
                 },
 
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.SubwayDepotScalar)), "地下鉄車庫" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.SubwayDepotScalar)),
-                    "各**地下鉄車庫**が維持できる地下鉄車両の数を変更します。\n" +
-                    "**100%** = バニラ（ゲーム既定値）。\n" +
-                    "**1000%** = 10倍。\n" +
-                    "基本建物に適用されます。"
+                                    "各**地下鉄車庫**が維持できる地下鉄車両数を変更します。\n" +
+                                    "**100%** = バニラ（ゲーム既定値）。\n" +
+                                    "**1000%** = 10倍。\n" +
+                                    "基本建物に適用されます。"
                 },
 
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.TaxiDepotScalar)), "タクシー車庫" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.TaxiDepotScalar)),
-                    "各**タクシー車庫**が維持できるタクシーの数を変更します。\n" +
-                    "**100%** = バニラ（ゲーム既定値）。\n" +
-                    "**1000%** = 10倍。\n" +
-                    "高い値ではタクシー交通が過剰になる場合があります。"
+                                    "各**タクシー車庫**が維持できるタクシー数を変更します。\n" +
+                                    "**100%** = バニラ（ゲーム既定値）。\n" +
+                                    "**1000%** = 10倍。\n" +
+                                    "高い値にするとタクシー交通が多くなりすぎる場合があります。"
                 },
 
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.TramDepotScalar)), "路面電車車庫" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.TramDepotScalar)),
-                    "各**路面電車車庫**が維持できる路面電車の数を変更します。\n" +
-                    "**100%** = バニラ（ゲーム既定値）。\n" +
-                    "**1000%** = 10倍。\n" +
-                    "基本建物に適用されます。"
+                                    "各**路面電車車庫**が維持できる路面電車数を変更します。\n" +
+                                    "**100%** = バニラ（ゲーム既定値）。\n" +
+                                    "**1000%** = 10倍。\n" +
+                                    "基本建物に適用されます。"
                 },
 
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.TrainDepotScalar)), "列車車庫" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.TrainDepotScalar)),
-                    "各**列車車庫**が維持できる列車の数を変更します。\n" +
-                    "**100%** = バニラ（ゲーム既定値）。\n" +
-                    "**1000%** = 10倍。\n" +
-                    "基本建物に適用されます。"
+                                    "各**列車車庫**が維持できる列車数を変更します。\n" +
+                                    "**100%** = バニラ（ゲーム既定値）。\n" +
+                                    "**1000%** = 10倍。\n" +
+                                    "基本建物に適用されます。"
                 },
 
-                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.ResetDepotToVanillaButton)), "車庫設定をリセット" },
-                { m_Setting.GetOptionDescLocaleID(nameof(Setting.ResetDepotToVanillaButton)),
-                    "すべての車庫スライダーを **100%** に戻します（ゲーム既定値 / バニラ）。" },
+                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.ResetDepotToVanillaButton)), "車庫を既定値に戻す" },
+                { m_Setting.GetOptionDescLocaleID(nameof(Setting.ResetDepotToVanillaButton)), "すべての車庫スライダーを **100%**（ゲーム既定値 / バニラ）に戻します。" },
 
                 // Passenger capacity sliders
-                { m_Setting.GetOptionGroupLocaleID(Setting.PassengerGroup), "乗客容量（車両ごとの最大人数）" },
+                { m_Setting.GetOptionGroupLocaleID(Setting.PassengerGroup), "乗客定員（車両ごとの最大人数）" },
 
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.BusPassengerScalar)), "バス" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.BusPassengerScalar)),
-                    "**バス乗客**容量を変更します。\n" +
-                    "**10%** = バニラ座席数の10%。\n" +
-                    "**100%** = バニラ座席数（ゲーム既定値）。\n" +
-                    "**1000%** = 座席数10倍。"
+                                    "**バスの乗客定員**を変更します。\n" +
+                                    "**10%** = バニラ座席数の10%。\n" +
+                                    "**100%** = バニラ座席数（ゲーム既定値）。\n" +
+                                    "**1000%** = 10倍の座席数。"
                 },
 
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.TramPassengerScalar)), "路面電車" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.TramPassengerScalar)),
-                    "**路面電車乗客**容量を変更します。\n" +
-                    "**10%** = バニラ座席数の10%。\n" +
-                    "**100%** = バニラ座席数（ゲーム既定値）。\n" +
-                    "**1000%** = 座席数10倍。"
+                                    "**路面電車の乗客定員**を変更します。\n" +
+                                    "**10%** = バニラ座席数の10%。\n" +
+                                    "**100%** = バニラ座席数（ゲーム既定値）。\n" +
+                                    "**1000%** = 10倍の座席数。"
                 },
 
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.TrainPassengerScalar)), "列車" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.TrainPassengerScalar)),
-                    "**列車乗客**容量を変更します。\n" +
-                    "機関車と車両セクションに適用されます。\n" +
-                    "**10%** = バニラ座席数の10%。\n" +
-                    "**100%** = バニラ座席数（ゲーム既定値）。\n" +
-                    "**1000%** = 座席数10倍。"
+                                    "**列車の乗客定員**を変更します。\n" +
+                                    "動力車と各セクションに適用されます。\n" +
+                                    "**10%** = バニラ座席数の10%。\n" +
+                                    "**100%** = バニラ座席数（ゲーム既定値）。\n" +
+                                    "**1000%** = 10倍の座席数。"
                 },
 
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.SubwayPassengerScalar)), "地下鉄" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.SubwayPassengerScalar)),
-                    "**地下鉄乗客**容量を変更します。\n" +
-                    "**10%** = バニラ座席数の10%。\n" +
-                    "**100%** = バニラ座席数（ゲーム既定値）。\n" +
-                    "**1000%** = 座席数10倍。"
+                                    "**地下鉄の乗客定員**を変更します。\n" +
+                                    "**10%** = バニラ座席数の10%。\n" +
+                                    "**100%** = バニラ座席数（ゲーム既定値）。\n" +
+                                    "**1000%** = 10倍の座席数。"
                 },
 
-                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.ShipPassengerScalar)), "客船" },
+                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.ShipPassengerScalar)), "船" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.ShipPassengerScalar)),
-                    "**客船**の容量を変更します（貨物船は対象外）。\n" +
-                    "**10%** = バニラ座席数の10%。\n" +
-                    "**100%** = バニラ座席数（ゲーム既定値）。\n" +
-                    "**1000%** = 座席数10倍。"
+                                    "**旅客船**の定員を変更します（貨物船は対象外）。\n" +
+                                    "**10%** = バニラ座席数の10%。\n" +
+                                    "**100%** = バニラ座席数（ゲーム既定値）。\n" +
+                                    "**1000%** = 10倍の座席数。"
                 },
 
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.FerryPassengerScalar)), "フェリー" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.FerryPassengerScalar)),
-                    "**フェリー乗客**容量を変更します。\n" +
-                    "**10%** = バニラ座席数の10%。\n" +
-                    "**100%** = バニラ座席数（ゲーム既定値）。\n" +
-                    "**1000%** = 座席数10倍。"
+                                    "**フェリーの乗客定員**を変更します。\n" +
+                                    "**10%** = バニラ座席数の10%。\n" +
+                                    "**100%** = バニラ座席数（ゲーム既定値）。\n" +
+                                    "**1000%** = 10倍の座席数。"
                 },
 
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.AirplanePassengerScalar)), "飛行機" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.AirplanePassengerScalar)),
-                    "**飛行機乗客**容量を変更します。\n" +
-                    "**10%** = バニラ座席数の10%。\n" +
-                    "**100%** = バニラ座席数（ゲーム既定値）。\n" +
-                    "**1000%** = 座席数10倍。"
+                                    "**飛行機の乗客定員**を変更します。\n" +
+                                    "**10%** = バニラ座席数の10%。\n" +
+                                    "**100%** = バニラ座席数（ゲーム既定値）。\n" +
+                                    "**1000%** = 10倍の座席数。"
                 },
 
-                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.DoublePassengersButton)), "全乗客を2倍" },
-                { m_Setting.GetOptionDescLocaleID(nameof(Setting.DoublePassengersButton)),
-                    "すべての乗客スライダーを **200%** に設定します。"
-                },
+                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.DoublePassengersButton)), "全乗客定員を2倍" },
+                { m_Setting.GetOptionDescLocaleID(nameof(Setting.DoublePassengersButton)), "すべての乗客スライダーを **200%** に設定します。" },
 
-                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.ResetPassengerToVanillaButton)), "乗客設定をすべてリセット" },
-                { m_Setting.GetOptionDescLocaleID(nameof(Setting.ResetPassengerToVanillaButton)),
-                    "すべての乗客スライダーを **100%** に戻します（ゲーム既定値 / バニラ）。" },
+                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.ResetPassengerToVanillaButton)), "乗客定員を既定値に戻す" },
+                { m_Setting.GetOptionDescLocaleID(nameof(Setting.ResetPassengerToVanillaButton)), "すべての乗客スライダーを **100%**（ゲーム既定値 / バニラ）に戻します。" },
 
                 // -------------------
                 // About tab
@@ -180,31 +176,36 @@ namespace AdjustTransit
 
                 { m_Setting.GetOptionGroupLocaleID(Setting.AboutInfoGroup), "情報" },
                 { m_Setting.GetOptionGroupLocaleID(Setting.AboutLinksGroup), "サポートリンク" },
-                { m_Setting.GetOptionGroupLocaleID(Setting.DebugGroup), "デバッグ / ログ" },
 
-                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.ModNameDisplay)), "MOD" },
-                { m_Setting.GetOptionDescLocaleID(nameof(Setting.ModNameDisplay)), "このMODの表示名です。" },
+#if DEBUG
+                { m_Setting.GetOptionGroupLocaleID(Setting.DebugGroup), "デバッグ / ログ" },
+#else
+                { m_Setting.GetOptionGroupLocaleID(Setting.DebugGroup), "ログ" },
+#endif
+
+                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.ModNameDisplay)), "Mod" },
+                { m_Setting.GetOptionDescLocaleID(nameof(Setting.ModNameDisplay)), "このModの表示名です。" },
 
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.ModVersionDisplay)), "バージョン" },
-                { m_Setting.GetOptionDescLocaleID(nameof(Setting.ModVersionDisplay)), "現在のMODバージョンです。" },
+                { m_Setting.GetOptionDescLocaleID(nameof(Setting.ModVersionDisplay)), "現在のModバージョンです。" },
 
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.OpenParadoxMods)), "Paradox" },
-                { m_Setting.GetOptionDescLocaleID(nameof(Setting.OpenParadoxMods)), "作者の Paradox Mods ページを開きます。" },
+                { m_Setting.GetOptionDescLocaleID(nameof(Setting.OpenParadoxMods)), "作者のParadox Modsページを開きます。" },
 
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.OpenDiscord)), "Discord" },
-                { m_Setting.GetOptionDescLocaleID(nameof(Setting.OpenDiscord)), "コミュニティ Discord をブラウザで開きます。" },
+                { m_Setting.GetOptionDescLocaleID(nameof(Setting.OpenDiscord)), "コミュニティDiscordをブラウザーで開きます。" },
 
+#if DEBUG
                 { m_Setting.GetOptionLabelLocaleID(nameof(Setting.EnableDebugLogging)), "詳細デバッグログ" },
                 { m_Setting.GetOptionDescLocaleID(nameof(Setting.EnableDebugLogging)),
-                    "トラブルシューティング用に、このMODのログファイルへ追加の詳細を書き込みます。\n" +
-                    "**通常プレイでは無効化**してください。\n" +
-                    "<これはログ量を増やすだけで、ゲームプレイ値は変更しません。>"
+                                    "デバッグ用に、このModのログファイルへ追加情報を書き込みます。\n" +
+                                    "通常プレイでは**無効**にしてください。ログが多すぎるとパフォーマンスが低下する場合があります。\n" +
+                                    "<ログ出力だけを増やし、ゲームプレイ値は変更しません。>"
                 },
+#endif
 
-                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.OpenLogButton)), "ログフォルダを開く" },
-                { m_Setting.GetOptionDescLocaleID(nameof(Setting.OpenLogButton)),
-                    "このMODのログフォルダを開きます。"
-                },
+                { m_Setting.GetOptionLabelLocaleID(nameof(Setting.OpenLogButton)), "ログを開く" },
+                { m_Setting.GetOptionDescLocaleID(nameof(Setting.OpenLogButton)), "このModのログファイルがあれば開きます。なければゲームのLogsフォルダーを開きます。" },
             };
         }
 

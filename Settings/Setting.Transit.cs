@@ -11,12 +11,11 @@
 
 namespace AdjustTransit
 {
-    using Game.Settings;  // Settings UI attributes
-    using Game.UI;        // Unit
+    using Game.Settings; // Settings UI attributes
+    using Game.UI;       // Unit
 
     public sealed partial class Setting
     {
-
         // ------------------------
         // DEPOT buildings (percent)
         // ------------------------

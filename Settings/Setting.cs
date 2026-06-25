@@ -13,7 +13,7 @@ namespace AdjustTransit
 {
     using System;                    // Exception
     using Colossal.IO.AssetDatabase; // FileLocation
-    using CS2Shared.RiverMochi;      // LogUtils, ShellOpen
+    using CS2Shared.RiverMochi;      // ShellOpen
     using Game;                      // IsGame
     using Game.Modding;              // IMod, ModSetting
     using Game.SceneFlow;            // GameManager
@@ -74,7 +74,10 @@ namespace AdjustTransit
         public override void SetDefaults()
         {
             SetDefaults_Transit();
+
+#if DEBUG
             EnableDebugLogging = false;
+#endif
         }
 
         public override void Apply()
@@ -174,13 +177,16 @@ namespace AdjustTransit
         // Debug / Logging
         // ----------------
 
+#if DEBUG
         [SettingsUISection(AboutTab, DebugGroup)]
         public bool EnableDebugLogging { get; set; }
+#else
+        public bool EnableDebugLogging => false;
+#endif
 
         [SettingsUIButtonGroup(DebugGroup)]
         [SettingsUIButton]
         [SettingsUISection(AboutTab, DebugGroup)]
-
         public bool OpenLogButton
         {
             set
